@@ -1,0 +1,30 @@
+.schedule {
+    grid-area: schedule;
+}
+
+.schedule__controls {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 25px;
+    row-gap: 10px;
+
+    @media screen and (min-width: 576px) {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, auto) 1fr;
+    }
+}
+
+.schedule__form-group {
+    display: flex;
+    align-items: center;
+}
+
+.schedule__label {
+    margin-right: 0.3rem;
+}
+
+.schedule__chart-container {
+    height: 400px;
+}

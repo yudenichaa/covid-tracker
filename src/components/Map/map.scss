@@ -1,0 +1,20 @@
+.map {
+    grid-area: map;
+    height: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+
+    @media screen and (min-width: 576px) {
+        height: 700px;
+    }
+}
+
+.map__container {
+    height: 100%;
+}
+
+.map__country-flag {
+    width: 100px;
+    object-fit: contain;
+}

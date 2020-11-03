@@ -1,0 +1,51 @@
+.summary {
+    grid-area: summary;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 50px;
+    row-gap: 25px;
+
+    @media screen and (min-width: 576px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.summary__card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.summary__card_highlight {
+    border-left: 7px solid #3f51b5;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition-property: border, border-radius;
+    transition-duration: 0.2s;
+}
+
+.summary__card-headline {
+    color: #4d4848;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.summary__card-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.summary__card-title_color_red {
+    color: #91281e;
+}
+
+.summary__card-title_color_green {
+    color: #4bb44b;
+}
+
+.summary__card-secondary-title {
+    color: #444444;
+    font-size: 0.8rem;
+    font-weight: bold;
+}

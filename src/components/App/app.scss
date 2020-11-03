@@ -1,0 +1,33 @@
+.app {
+    padding: 20px 10px 50px 10px;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.app__content {
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    align-items: start;
+    align-content: start;
+    row-gap: 25px;
+    column-gap: 25px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header"
+        "summary"
+        "schedule"
+        "map"
+        "aside";
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(3, auto) 1fr;
+        grid-template-areas:
+            "header aside"
+            "summary aside"
+            "schedule aside"
+            "map map";
+    }
+}

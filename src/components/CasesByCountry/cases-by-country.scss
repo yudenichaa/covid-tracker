@@ -1,0 +1,45 @@
+.cases-by-country {
+    grid-area: aside;
+    height: 400px;
+    overflow-y: auto;
+
+    @media screen and (min-width: 1400px) {
+        height: 690px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgb(105, 105, 105);
+    }
+}
+
+.cases-by-country__headline {
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.cases-by-country__table {
+    width: 100%;
+}
+
+.cases-by-country__table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.cases-by-country__table-row:nth-last-child(odd) {
+    background-color: #91281e44;
+}
