@@ -1,10 +1,13 @@
 .cases-by-country {
     grid-area: aside;
+}
+
+.cases-by-country__table-container {
     height: 400px;
     overflow-y: auto;
 
     @media screen and (min-width: 1400px) {
-        height: 690px;
+        height: 680px;
     }
 
     &::-webkit-scrollbar {
