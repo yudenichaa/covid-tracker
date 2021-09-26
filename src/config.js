@@ -9,15 +9,15 @@ export default {
     mapCircles: {
         cases: {
             color: "#91281e",
-            multiplier: 0.15,
+            multiplier: 0.03,
         },
         recovered: {
             color: "#4bb44b",
-            multiplier: 0.15,
+            multiplier: 0.03,
         },
         deaths: {
             color: "#91281e",
-            multiplier: 0.15,
+            multiplier: 0.3,
         }
     },
     chartOptions: {
